@@ -51,18 +51,18 @@ function writeToFile(data) {
     ## Credits
     ${data.credits}
     ## License
-    {data.license}
+    ${data.license}
     ---`
 }
 
 inquirer
     .prompt(questions)
     .then((data) => {
-    const READMEPageContent = writeToFile(data);
-    fs.writeFile('index.html', READMEPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
+        const READMEPageContent = writeToFile(data);
+        fs.writeFile('index.html', READMEPageContent, (err) =>
+            err ? console.log(err) : console.log('Successfully created index.html!')
+        );
+    });
 
 function init() {
     console.log('node index.js')
