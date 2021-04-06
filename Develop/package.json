@@ -1,5 +1,5 @@
 {
-  "name": "Develop",
+  "name": "inquirer",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -10,7 +10,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ntjohns1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntjohns1/README_Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntjohns1/README_Generator/issues"
+  },
+  "homepage": "https://github.com/ntjohns1/README_Generator#readme",
   "description": ""
 }

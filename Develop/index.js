@@ -1,5 +1,5 @@
 //Include packages needed for this application
-const inquirer = require(inquirer);
+const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
@@ -7,7 +7,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?',
+        message: 'What is the title of your project?', 
     },
     {
         type: 'input',
@@ -54,19 +54,20 @@ function writeToFile(data) {
     ${data.license}
     ---`
 }
-
-inquirer
-    .prompt(questions)
-    .then((data) => {
-        const READMEPageContent = writeToFile(data);
-        fs.writeFile('index.html', READMEPageContent, (err) =>
-            err ? console.log(err) : console.log('Successfully created index.html!')
-        );
-    });
-
 function init() {
-    console.log('node index.js')
+    inquirer.prompt(questions).then((data) => {
+        console.log(data);
+            // const READMEPageContent = writeToFile(data);
+            // fs.writeFile('README.md', READMEPageContent, (err) =>
+            //     err ? console.log(err) : console.log('Successfully created README.md!')
+            // );
+        });
+
 }
 
-// Function call to initialize app
+// function init() {
+//     console.log('node index.js')
+// }
+
+// // Function call to initialize app
 init();
