@@ -52,7 +52,7 @@ function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(data)
         const fileName =  'README.md'
-        const pageContent = generateMarkdown
+        const pageContent = generateMarkdown(data);
         writeToFile(fileName, pageContent); 
         });
 }
