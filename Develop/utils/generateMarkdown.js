@@ -84,16 +84,43 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ## Description
 ${data.description}
+// Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
 ## Installation
+\`\`\`
 ${data.installation}
+\`\`\`
+
 ## Usage
 ${data.usage}
-## Credits
-${data.credits}
+
 ## License  
-${licenseStr}`;
+${licenseStr}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+For questions, please open an issue in the GitHub repo: [https://github.com/${data.questions}]`;
+
+
+
 }
 
 module.exports = generateMarkdown;
 
+// Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
