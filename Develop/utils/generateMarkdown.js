@@ -114,7 +114,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-For questions, please open an issue in the GitHub repo: [https://github.com/${data.questions}]`;
+For questions, please open an issue in the GitHub repo: [https://github.com/${data.username}]`;
 
 
 

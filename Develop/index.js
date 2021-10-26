@@ -34,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'List any collaborators, with links to their GitHub profiles. Also, list any third party assets and links to any tutuorials used.',
+        message: 'How can someone contribute to your project?',
     },
     {
         type: 'input',
@@ -43,8 +43,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Enter your GitHub username.',
+        name: 'fullName',
+        message: 'Please enter your first and last name.',
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Please enter your GitHub username.',
     },
 ];
 
