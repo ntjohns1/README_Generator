@@ -26,15 +26,30 @@ const questions = [
         message: 'Provide instructions and examples for use. Include screenshots as needed.',
     },
     {
-        type: 'input',
-        name: 'credits',
-        message: 'List any collaborators, with links to their GitHub profiles. Also, list any third party assets and links to any tutuorials used.',
-    },
-    {
         type: 'checkbox',
         message: 'Please select a license for your project.',
-        choices: ['MIT', 'Apache', 'BSD-3', 'GNU-3', 'Mozilla', 'Perl', 'none'],
+        choices: ['MIT', 'Apache', 'BSD-3', 'GNU-3', 'Mozilla', 'none'],
         name: 'license'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'How can someone contribute to your project?',
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'If your application has any unit tests, what are the commands to initiate them?',
+    },
+    {
+        type: 'input',
+        name: 'fullName',
+        message: 'Please enter your first and last name.',
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Please enter your GitHub username.',
     },
 ];
 
