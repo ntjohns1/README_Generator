@@ -162,6 +162,9 @@ function generateMarkdown(data) {
   let licenseSectionStr = renderLicenseSection(data.license, data.fullName);
   return `
 # ${data.title}
+
+${licenseStr}
+
 ## Description
 ${data.description}
 
@@ -184,7 +187,6 @@ ${data.installation}
 ${data.usage}
 
 ## License  
-${licenseStr}
 
 ${licenseSectionStr}
 
